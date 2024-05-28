@@ -10,3 +10,11 @@ class Anagram:
                 match_word_list.append(word)
 
         return match_word_list
+    
+
+word = "listen"
+word_list = ["silent", "listen", "inlets", "banana"]
+anagram = Anagram(word)
+matches = anagram.match(word_list)
+print(f"Matches for '{word}': {matches}")
+
